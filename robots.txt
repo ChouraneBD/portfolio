@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chouranebd.github.io/portfolio/sitemap.xml
