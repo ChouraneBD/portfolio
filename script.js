@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     magnets.forEach(magnet => {
         magnet.addEventListener('mousemove', function (e) {
             const position = magnet.getBoundingClientRect();
-            const x = e.pageX - position.left - position.width / 2;
-            const y = e.pageY - position.top - position.height / 2;
+            const x = e.clientX - position.left - position.width / 2;
+            const y = e.clientY - position.top - position.height / 2;
 
             magnet.style.transform = `translate(${x * 0.3}px, ${y * 0.5}px) scale(1.1)`;
         });
