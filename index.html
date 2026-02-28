@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badreddine Chourane - Minimalist Portfolio</title>
+    <meta name="description" content="Portfolio of Badreddine Chourane, Étudiant Ingénieur et Développeur Full Stack.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <ul class="menu-links">
+            <li><a href="#projects" class="menu-link">PROJETS</a></li>
+            <li><a href="#experience" class="menu-link">EXPÉRIENCE</a></li>
+            <li><a href="#formation" class="menu-link">FORMATION</a></li>
+            <li><a href="#certifs" class="menu-link">CERTIFS</a></li>
+            <li><a href="#competences" class="menu-link">COMPÉTENCES</a></li>
+            <li><a href="#contact" class="menu-link">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+
+            </div>
+            <button class="menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Divider Line with Dots -->
+        <div class="line-divider">
+            <span class="dot"></span>
+            <div class="line"></div>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="section-hero">
+            <h1 class="huge-title">BADREDDINE<br>CHOURANE<br><span id="typewriter"
+                    style="color: #666; font-size: clamp(2rem, 8vw, 100px); letter-spacing: -0.01em;"></span><span
+                    class="typing-cursor"
+                    style="color: #666; font-size: clamp(2rem, 8vw, 100px); font-weight: 300;">|</span></h1>
+        </header>
+
+        <div class="line-divider">
+            <span class="dot"></span>
+            <div class="line"></div>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Intro Text Section -->
+        <section class="section-intro">
+            <div class="intro-grid">
+                <div class="intro-left">
+                    <p class="small-label">À PROPOS</p>
+                    <p class="micro-text">Casablanca, Maroc &mdash;</p>
+                </div>
+                <div class="intro-right">
+                    <h2 class="intro-statement">
+                        Étudiant en Cycle d'Ingénieur Informatique et Réseaux à l'EMSI. Spécialisé en développement web
+                        full stack, je conçois des solutions complètes de la base de données à l'interface utilisateur.
+                    </h2>
+                    <p class="intro-subtext">
+                        JE MAÎTRISE AUSSI BIEN LES TECHNOLOGIES FRONT-END (REACT, JS, CSS3) QUE BACK-END (LARAVEL,
+                        SYMFONY, PHP, PYTHON), ME PERMETTANT D'AVOIR UNE COMPRÉHENSION GLOBALE DES PROJETS. MA CAPACITÉ
+                        À M'ADAPTER AUX NOUVEAUX ENVIRONNEMENTS (NOSQL, NEO4J) FAIT DE MOI UN ATOUT POLYVALENT POUR
+                        TOUTE ÉQUIPE.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="section-projects" style="padding-top: 60px;">
+            <div class="line-divider" style="margin-bottom: 30px;">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+            <h2 class="huge-title mobile-small"
+                style="font-size: clamp(3rem, 4.5vw, 60px); margin-bottom: 50px; text-transform: uppercase;">PROJETS
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card dark-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/GuelyaTime.jpeg" alt="Guelya Time Screenshot"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                            class="project-img">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">GUELYA TIME</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">NEO4J</span>
+                        <span class="tag">JAVAFX</span>
+                        <span class="tag">GIT</span>
+                    </div>
+                    <p class="project-desc">Application desktop de recommandation de films personnalisées combinant
+                        JavaFX et la puissance des bases de données orientées graphes Neo4j &mdash;</p>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card light-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/toora.jpeg" alt="Toora Screenshot"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                            class="project-img">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">TOORA</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">LARAVEL</span>
+                        <span class="tag">REACT.JS</span>
+                        <span class="tag">API REST</span>
+                    </div>
+                    <p class="project-desc">Application web full-stack dédiée à la gestion et à la location de
+                        trottinettes électriques &mdash;</p>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card gray-card">
+                    <div class="project-image-wrapper">
+                        <img src="img/UsaHome.png" alt="USA Home Screenshot"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                            class="project-img">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">USAHOME</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">LARAVEL</span>
+                        <span class="tag">REACT.JS</span>
+                        <span class="tag">MYSQL</span>
+                    </div>
+                    <p class="project-desc">Plateforme web de demande de devis personnalisés automatisant la collecte
+                        des informations avec une interface frontend moderne en React.js &mdash;</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-experience">
+            <div class="line-divider">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-left">
+                    <h2 class="huge-title mobile-small">EXPÉRIENCE</h2>
+                </div>
+                <div class="exp-right">
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Développeur Web · USAHOME Maroc</span>
+                            <span class="exp-date">[Juin 2025 - Juil 2025]</span>
+                        </div>
+                        <p class="exp-desc">Contributon à la transformation digitale d'USAHOME. Conception et
+                            développement d'une plateforme web permettant aux clients de demander des devis
+                            personnalisés. Utilisation de Laravel pour le backend et React.js pour une interface moderne
+                            et intuitive, automatisant les processus.</p>
+                        <div class="project-tags" style="margin-top:10px;">
+                            <span class="tag" style="border-color: #000;">LARAVEL</span>
+                            <span class="tag" style="border-color: #000;">REACT.JS</span>
+                            <span class="tag" style="border-color: #000;">MYSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Développeur Web · JCI Casalmpact</span>
+                            <span class="exp-date">[Jan 2023 - Mar 2023]</span>
+                        </div>
+                        <p class="exp-desc">Ingénierie d'une solution web complète avec PHP et MySQLi transformant la
+                            gestion de l'organisation. Création d'un site public interactif et d'un tableau de bord
+                            administrateur sur-mesure intégrant des fonctionnalités CRUD approfondies.</p>
+                        <div class="project-tags" style="margin-top:10px;">
+                            <span class="tag" style="border-color: #000;">PHP</span>
+                            <span class="tag" style="border-color: #000;">MYSQLi</span>
+                            <span class="tag" style="border-color: #000;">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="formation" class="section-experience">
+            <div class="line-divider">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-left">
+                    <h2 class="huge-title mobile-small">FORMATION</h2>
+                </div>
+                <div class="exp-right">
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Cycle d'Ingénieur en Informatique et Réseaux</span>
+                            <span class="exp-date">[Oct 2024 - Juin 2027]</span>
+                        </div>
+                        <p class="exp-desc">Ecole Marocaine des Sciences de l'Ingénieur (EMSI) ·
+                            Casablanca.<br>Spécialisation en développement web full stack. Études approfondies en
+                            architecture de réseaux, structures de données, POO et conception de bases de données.</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Technicien Spécialisé en Dev Web Full Stack</span>
+                            <span class="exp-date">[Sep 2021 - Juil 2023]</span>
+                        </div>
+                        <p class="exp-desc">Institut Spécialisé des Arts Graphiques (OFPPT) · Casablanca.<br>Formation
+                            intensive spécialisée en développement front-end et back-end (PHP, Laravel, React.js).
+                            Apprentissage des architectures MVC et conception de BDD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifs" class="section-experience">
+            <div class="line-divider">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-left">
+                    <h2 class="huge-title mobile-small">CERTIFS</h2>
+                </div>
+                <div class="exp-right">
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">React Native</span>
+                            <span class="exp-date">[Déc 2025]</span>
+                        </div>
+                        <p class="exp-desc">Meta · Credential ID TTAWJ3Y8TZZ3</p>
+                    </div>
+
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">React Basics</span>
+                            <span class="exp-date">[Déc 2025]</span>
+                        </div>
+                        <p class="exp-desc">Meta · Credential ID A41B0LT7AG7M</p>
+                    </div>
+
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">Software Engineering: Software Design and Project Management</span>
+                            <span class="exp-date">[Avril 2025]</span>
+                        </div>
+                        <p class="exp-desc">The Hong Kong University of Science and Technology · Credential ID
+                            F56KTU6XUGPG</p>
+                    </div>
+
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">Using Python to Access Web Data</span>
+                            <span class="exp-date">[Avril 2025]</span>
+                        </div>
+                        <p class="exp-desc">University of Michigan · Credential ID 691CFPMG51CW</p>
+                    </div>
+
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">Interactivity with JavaScript</span>
+                            <span class="exp-date">[Déc 2024]</span>
+                        </div>
+                        <p class="exp-desc">University of Michigan · Credential ID GHRHHH3YYBTZ</p>
+                    </div>
+
+                    <div class="exp-item"
+                        style="border-bottom: 1px dashed rgba(0,0,0,0.1); margin-bottom: 20px; padding-bottom: 20px;">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">Successful Negotiation: Essential Strategies and Skills</span>
+                            <span class="exp-date">[Déc 2024]</span>
+                        </div>
+                        <p class="exp-desc">University of Michigan · Credential ID GC9BRT81K3EN</p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-meta" style="margin-bottom: 5px;">
+                            <span class="exp-role">Intro à la programmation orientée objet (en C++)</span>
+                            <span class="exp-date">[Déc 2024]</span>
+                        </div>
+                        <p class="exp-desc">École Polytechnique Fédérale de Lausanne (EPFL) · Credential ID 1RHIS5X3NGE1
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="competences" class="section-experience">
+            <div class="line-divider">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-left">
+                    <h2 class="huge-title mobile-small">COMPÉTENCES</h2>
+                </div>
+                <div class="exp-right">
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Langages & Frameworks</span>
+                        </div>
+                        <p class="exp-desc">React.js, React Native, Laravel, Symfony, Django, JavaScript (ES6+), PHP,
+                            Python, Java, C++, ASP.NET, HTML5, CSS3.</p>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-meta">
+                            <span class="exp-role">Bases de données & Outils</span>
+                        </div>
+                        <p class="exp-desc">MySQL, MySQLi, MongoDB, Oracle Database, SQL Server, Cassandra, Neo4j. Git,
+                            GitHub, APIs REST, Architecture MVC, Scrum/Agile, Merise/UML.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer id="contact" class="section-contact">
+            <div class="line-divider">
+                <span class="dot"></span>
+                <div class="line"></div>
+                <span class="dot"></span>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h2 class="huge-title">CONTACT</h2>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/badreddine-chourane-021867229" class="social-btn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:badreddine.chourane@gmail.com" class="social-btn"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-profile">
+                        <div class="profile-pic"></div>
+                        <div>
+                            <p class="small-label">DÉVELOPPEUR FULL STACK</p>
+                            <p class="micro-text">Casablanca, Maroc &mdash;</p>
+                        </div>
+                    </div>
+                    <h3 class="contact-statement">
+                        "Enthousiaste à l'idée d'apporter ma double compétence front-end et back-end à des projets
+                        ambitieux."
+                    </h3>
+                    <p class="micro-text"
+                        style="color:#666; margin-top: 20px; font-style: normal; font-size: 11px; line-height: 1.6;">
+                        <strong>Email :</strong> Chouranebd@gmail.com<br>
+                        <strong>Tél :</strong> +212 602 621 443
+                    </p>
+                    <p class="micro-text" style="color:#666; margin-top: 15px;">
+                        * RECHERCHE ACTUELLE D'ALTERNANCE OU DE STAGE EN DÉVELOPPEMENT WEB FULL STACK.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="line" style="margin-bottom: 20px;"></div>
+                <div class="fb-content">
+                    <span class="small-label" style="font-size: 10px;">BADREDDINE CHOURANE</span>
+                    <span class="small-label" style="font-size: 10px;">DEVELOPER</span>
+                    <span class="small-label" style="font-size: 10px;">&copy; 2026</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script for custom cursor and interactions -->
+    <script src="script.js"></script>
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+    </script>
+</body>
+
+</html>
